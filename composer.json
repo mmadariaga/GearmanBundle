@@ -1,11 +1,11 @@
 {
-    "name": "mmoreram/gearman-bundle",
+    "name": "grimbode/gearman-bundle",
     "replace": {
         "mmoreramerino/gearman-bundle": "dev-master"
     },
-    "description": "Adds gearman support to your Symfony2 project",
+    "description": "Adds gearman support to your Symfony3 project",
     "keywords": ["gearman"],
-    "homepage": "https://github.com/mmoreram/GearmanBundle",
+    "homepage": "https://github.com/grimbode/GearmanBundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
         },
         {
             "name": "Symfony Community",
-            "homepage": "https://github.com/mmoreram/GearmanBundle/contributors"
+            "homepage": "https://github.com/grimbode/GearmanBundle"
         }
     ],
     "require": {
@@ -33,9 +33,9 @@
         "symfony/finder": "~2.1",
         "symfony/options-resolver": "~2.1"
     },
-    "target-dir": "Mmoreram/GearmanBundle",
+    "target-dir": "Grimbode/GearmanBundle",
     "autoload": {
-        "psr-0": { "Mmoreram\\GearmanBundle": "" }
+        "psr-0": { "Grimbode\\GearmanBundle": "" }
     },
     "minimum-stability": "stable", 
     "extra": {
