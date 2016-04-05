@@ -33,9 +33,9 @@
         "symfony/finder": "^3.0",
         "symfony/options-resolver": "^3.0"
     },
-    "target-dir": "Grimbode/GearmanBundle",
+    "target-dir": "Mmoreram/GearmanBundle",
     "autoload": {
-        "psr-0": { "Grimbode\\GearmanBundle": "" }
+        "psr-0": { "Mmoreram\\GearmanBundle": "" }
     },
     "minimum-stability": "stable", 
     "extra": {
