@@ -6,7 +6,7 @@ services:
     gearman.parser:
         class: %gearman.parser.class%
         arguments:
-            kernel: '@@kernel'
+            kernel: "@kernel"
             annotations_reader: '@annotation_reader'
             symfony_finder: '@gearman.external.symfony_finder'
             gearman_bundles: %gearman.bundles%
