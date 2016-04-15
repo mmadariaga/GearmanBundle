@@ -20,7 +20,7 @@ services:
             gearman_cache: '@doctrine_cache.providers.gearman_cache'
             gearman_cache_id: %gearman.cache.id%
         calls:
-            - [load,  [@doctrine_cache.providers.gearman_cache, %gearman.cache.id%]]
+            - [load,  ['@doctrine_cache.providers.gearman_cache', %gearman.cache.id%]]
         tags:
             - { name: kernel.cache_clearer }
             - { name: kernel.cache_warmer, priority: 0 }
@@ -40,8 +40,8 @@ services:
         class: %gearman.execute.class%
         parent: gearman.abstract.service
         calls:
-            - [setContainer,  [@service_container]]
-            - [setEventDispatcher, [@event_dispatcher]]
+            - [setContainer,  ['@service_container']]
+            - [setEventDispatcher, ['@event_dispatcher']]
 
     gearman:
         class: %gearman.client.class%
@@ -49,6 +49,6 @@ services:
         calls:
             - [initTaskStructure, []]
             - [setDefaultServers, [%gearman.servers%]]
-            - [setGearmanCallbacksDispatcher, [@gearman.dispatcher.callbacks]]
-            - [setUniqueJobIdentifierGenerator, [@gearman.unique_job_identifier]]
+            - [setGearmanCallbacksDispatcher, ['@gearman.dispatcher.callbacks']]
+            - [setUniqueJobIdentifierGenerator, ['@gearman.unique_job_identifier']]
             - [setDefaultSettings, [%gearman.default.settings%]]
