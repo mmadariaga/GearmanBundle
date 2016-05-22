@@ -1,5 +1,5 @@
 {
-    "name": "grimbode/gearman-bundle",
+    "name": "thomasez/gearman-bundle",
     "replace": {
         "mmoreramerino/gearman-bundle": "dev-master"
     },
@@ -25,13 +25,7 @@
         "doctrine/doctrine-cache-bundle": "~1.0",
         "doctrine/common": "~2.2",
 
-        "symfony/dependency-injection": "^3.0",
-        "symfony/framework-bundle": "^3.0",
-        "symfony/http-kernel": "^3.0",
-        "symfony/console": "^3.0",
-        "symfony/config": "^3.0",
-        "symfony/finder": "^3.0",
-        "symfony/options-resolver": "^3.0"
+        "symfony/symfony": "2.8.*, ^3.0"
     },
     "target-dir": "Mmoreram/GearmanBundle",
     "autoload": {
