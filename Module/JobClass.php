@@ -14,7 +14,8 @@
 namespace Mmoreram\GearmanBundle\Module;
 
 use ReflectionMethod;
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
 use Mmoreram\GearmanBundle\Driver\Gearman\Job as JobAnnotation;
 
@@ -25,8 +26,10 @@ use Mmoreram\GearmanBundle\Driver\Gearman\Job as JobAnnotation;
  *
  * @since 2.3.1
  */
-class JobClass extends ContainerAware
+class JobClass implements ContainerAwareInterface
 {
+    use ContainerAwareTrait;
+
     /**
      * @var string
      *
