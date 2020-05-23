@@ -1,5 +1,5 @@
 {
-    "name": "thomasez/gearman-bundle",
+    "name": "mmoreram/gearman-bundle",
     "replace": {
         "mmoreramerino/gearman-bundle": "dev-master"
     },
