@@ -26,11 +26,11 @@
         "php": "^7.3",
         "ext-gearman": "*",
 
-        "doctrine/doctrine-cache-bundle": "^1.3",
         "doctrine/common": "^2.10",
         "symfony/framework-bundle": "^4.4|^5.0",
         "symfony/http-kernel": "^4.4|^5.0",
         "symfony/console": "^4.4|^5.0",
+        "symfony/cache": "^4.4|^5.0",
         "symfony/config": "^4.4|^5.0",
         "symfony/finder": "^4.4|^5.0",
         "symfony/options-resolver": "^4.4|^5.0"
