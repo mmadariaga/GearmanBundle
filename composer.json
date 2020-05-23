@@ -35,9 +35,8 @@
         "symfony/finder": "^4.4|^5.0",
         "symfony/options-resolver": "^4.4|^5.0"
     },
-    "target-dir": "Mmoreram/GearmanBundle",
     "autoload": {
-        "psr-0": { "Mmoreram\\GearmanBundle": "" }
+        "psr-4": { "Mmoreram\\GearmanBundle": "" }
     },
     "minimum-stability": "stable",
     "extra": {
