@@ -3,7 +3,7 @@
     "replace": {
         "mmoreramerino/gearman-bundle": "dev-master"
     },
-    "description": "Adds gearman support to your Symfony3 project",
+    "description": "Adds gearman support to your Symfony 4 and 5 project",
     "keywords": ["gearman"],
     "homepage": "https://github.com/grimbode/GearmanBundle",
     "type": "symfony-bundle",
@@ -14,28 +14,38 @@
             "email": "yuhu@mmoreram.com"
         },
         {
+            "name": "Matt Daum",
+            "email": "matt@setfive.com"
+        },
+        {
             "name": "Symfony Community",
             "homepage": "https://github.com/grimbode/GearmanBundle"
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": "^7.3",
         "ext-gearman": "*",
 
-        "doctrine/doctrine-cache-bundle": "~1.0",
-        "doctrine/common": "~2.2",
-
-        "symfony/symfony": ">=2.8"
-
+        "doctrine/doctrine-cache-bundle": "^1.3",
+        "doctrine/common": "^2.10",
+        "symfony/framework-bundle": "^4.4|^5.0",
+        "symfony/http-kernel": "^4.4|^5.0",
+        "symfony/console": "^4.4|^5.0",
+        "symfony/config": "^4.4|^5.0",
+        "symfony/finder": "^4.4|^5.0",
+        "symfony/options-resolver": "^4.4|^5.0"
     },
     "target-dir": "Mmoreram/GearmanBundle",
     "autoload": {
         "psr-0": { "Mmoreram\\GearmanBundle": "" }
     },
-    "minimum-stability": "stable", 
+    "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
             "dev-master": "4.0-dev"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 <6.0"
     }
 }
