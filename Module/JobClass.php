@@ -28,6 +28,8 @@ use Mmoreram\GearmanBundle\Driver\Gearman\Job as JobAnnotation;
  */
 class JobClass implements ContainerAwareInterface
 {
+    use ContainerAwareTrait;
+
     /**
      * @var string
      *
