@@ -15,15 +15,21 @@ services:
             - "%gearman.servers%"
             - "%gearman.default.settings%"
 
+    gearman.cache.provider.doctrine:
+        class: Symfony\Component\Cache\DoctrineProvider
+        autowire: true
+        autoconfigure: true
+#        public: true
+
     gearman.cache.wrapper:
         class: "%gearman.cache.wrapper.class%"
         public: true
         arguments:
             - "@gearman.parser"
-            - "@doctrine_cache.providers.gearman_cache"
+            - "@gearman.cache.provider.doctrine"
             - "%gearman.cache.id%"
         calls:
-            - [load,  ["@doctrine_cache.providers.gearman_cache", "%gearman.cache.id%"]]
+            - [load,  ["@gearman.cache.provider.doctrine", "%gearman.cache.id%"]]
         tags:
             - { name: kernel.cache_clearer }
             - { name: kernel.cache_warmer, priority: 0 }
