@@ -15,6 +15,7 @@ namespace Mmoreram\GearmanBundle\Module;
 
 use ReflectionMethod;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 use Mmoreram\GearmanBundle\Driver\Gearman\Job as JobAnnotation;
