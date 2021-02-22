@@ -1,5 +1,5 @@
 {
-    "name": "mmoreram/gearman-bundle",
+    "name": "mmadariaga/gearman-bundle",
     "replace": {
         "mmoreramerino/gearman-bundle": "dev-master"
     },
@@ -25,7 +25,6 @@
     "require": {
         "php": "^7.3",
         "ext-gearman": "*",
-
         "doctrine/common": "^2.10",
         "symfony/framework-bundle": "^4.4|^5.0",
         "symfony/http-kernel": "^4.4|^5.0",
